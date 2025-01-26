@@ -1,0 +1,25 @@
+@import url("./base.css");
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            @apply bg-blue-700;
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+                transform: scale(1.1);
+                        }
+        }
+    }
+}
