@@ -8,6 +8,7 @@ import { CiSearch } from "react-icons/ci";
 import { AiOutlineUser } from "react-icons/ai";
 import { FiLogOut } from 'react-icons/fi';
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -47,11 +48,13 @@ const HeaderContent = () => {
           <button className='text-gray-500 hover:text-darkText transition-all duration-200'>{session ? 'Logout' : 'Login/Register'}</button>
         </div>
         {/* cart button */}
-        <div className='bg-black hover:bg-slate-950 rounded-full hover:text-white flex items-center gap-x-1 px-4 py-2 border-[1px] relative'>
-          <FaShoppingCart className='text-white border-black hover:text-white transition-all duration-200 cursor-pointer ' />
-          <p className='text-sm font-semibold text-white transition-all duration-200 cursor-pointer '>$0.00</p>
-          <span className='bg-white text-red-600 rounded-full text-xs font-semibold absolute -right-2 -top-1 w-6 h-6 flex items-center justify-center '>10</span>
-        </div>
+        <Link href="/cart">
+          <div className='bg-black hover:bg-slate-950 rounded-full hover:text-white flex items-center gap-x-1 px-4 py-2 border-[1px] relative'>
+            <FaShoppingCart className='text-white border-black hover:text-white transition-all duration-200 cursor-pointer ' />
+            <p className='text-sm font-semibold text-white transition-all duration-200 cursor-pointer '>$0.00</p>
+            <span className='bg-white text-red-600 rounded-full text-xs font-semibold absolute -right-2 -top-1 w-6 h-6 flex items-center justify-center '>10</span>
+          </div>
+        </Link>
 
       </Container>
 
