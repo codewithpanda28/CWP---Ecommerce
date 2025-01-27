@@ -53,6 +53,24 @@ This is a Next.js project that includes a basic structure for a modern web appli
    npm run dev
    ```
 
+## Additional Notes
+If you encounter any issues with Redux during development, it is recommended to revisit Redux concepts and fix any related bugs before proceeding further.
+
+Preview Without Cloning:
+If you want to view the project without cloning or installing dependencies, open the project on GitHubBox:
+
+Visit the GitHub repository.
+Replace github.com in the URL with githubbox.com and press Enter.
+Example:
+```bash
+https://github.com/codewithpanda28/CWP---Ecommerce
+```
+```bash
+https://githubbox.com/codewithpanda28/CWP---Ecommerce
+```
+
+
+
 ## Metadata
 
 The project metadata is defined in `layout.tsx`:
@@ -87,5 +105,9 @@ This project is licensed under the CodeWithPanda.
 ---
 
 For any queries, please contact the project owner.
+```bash
 WhatsApp - +91 8252472186
+```
+```bash
 Instagram - https://www.instagram.com/panda_creation_29?igsh=MXoydTd4cjF5MnFq
+```
